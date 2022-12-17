@@ -23,6 +23,6 @@ jobs:
    
     - name: build & push the image
       run: |
-          docker buildx build --push \
+          docker buildx create --name mybuilder1 --driver docker-container --use && docker buildx build --push \
             --tag georgedimac/alpine-with_ssh_client:latest \
             --platform linux/amd64,linux/arm/v7,linux/arm64 .
