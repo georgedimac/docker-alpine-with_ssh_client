@@ -1,7 +1,7 @@
 ## Small multi-arch docker image with ssh-client on top of Alpine. 
 
 
-Running interactive shell without creating a container:
+You can run it as shell with auto-removing container on exit:
 ```
 docker run -it --rm georgedimac/alpine-with_ssh_client
 ```
